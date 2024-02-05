@@ -5,5 +5,9 @@ Arbre::Arbre() {
 }
 
 void Arbre::croissance() {
-    setTaille(getTaille() + 1.0f);
+    setTaille(mCroissanceStrategie->nouvelleTaille(getTaille()));
+}
+
+void Arbre::setCroissanceStrategie(std::unique_ptr<ICroissanceStrategie>&& croissance_strategie) {
+    mCroissanceStrategie = std::move(croissance_strategie);
 }
