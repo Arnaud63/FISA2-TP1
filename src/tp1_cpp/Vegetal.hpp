@@ -4,7 +4,7 @@
 class Vegetal {
 public:
     Vegetal();
-    virtual ~Vegetal() = 0;
+    virtual ~Vegetal() = default; // demande l'implementation par defaut qu'aurait implementé le compilateur
 
     float getTaille() const;
     virtual void croissance() = 0;
@@ -18,3 +18,8 @@ private:
 };
 
 #endif // VEGETAL_H
+
+/*
+Les champs ne sont jamais placé en protected car cela detruirait l'encapsulation
+(ce champs pourrait être exposé en publique dans la classe fille)
+*/

@@ -69,7 +69,7 @@ TEST(ClassModelisationTest, Croissance) {
 // Lorsque l'on compare deux flotants, il faut donc utiliser une marge d'erreur.
 constexpr float TP1_EPSILON = 0.00001f;
 
-/* TEST(ClassModelisationTest, Quand_Croissante_Taille_Arbre_Augmente_1) {
+TEST(ClassModelisationTest, Quand_Croissante_Taille_Arbre_Augmente_1) {
 	Arbre monArbre;
 	EXPECT_NEAR(monArbre.getTaille(), 0.0, TP1_EPSILON);
 	monArbre.croissance();
@@ -105,12 +105,12 @@ TEST(ClassModelisationTest, Quand_Croissante_Arbre_Grandissent) {
 		vegetal->croissance();
 		EXPECT_GT(vegetal->getTaille(), taille);
 	}
-} */
+}
 
 // Ajouter une classe fille a Vegetal : Fleur
 // Fleur possede une taille maximale qu'elle ne peux depasser
 
-/* TEST(ClassModelisationTest, Quand_Croissante_Fleur_Sous_Max_Taille_Augmente_0_point_1) {
+TEST(ClassModelisationTest, Quand_Croissante_Fleur_Sous_Max_Taille_Augmente_0_point_1) {
 	Fleur maFleur(1.5);
 	EXPECT_NEAR(maFleur.getTaille(), 0.0, TP1_EPSILON);
 	maFleur.croissance();
@@ -126,7 +126,7 @@ TEST(ClassModelisationTest, Quand_Croissante_Fleur_Depace_Max_Taille_Block_Max) 
 	EXPECT_NEAR(maFleur.getTaille(), 0.05, TP1_EPSILON);
 	maFleur.croissance();
 	EXPECT_NEAR(maFleur.getTaille(), 0.05, TP1_EPSILON);
-} */
+}
 
 
 // Stratégie

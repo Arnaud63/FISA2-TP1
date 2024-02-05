@@ -4,10 +4,6 @@ Arbre::Arbre() {
 
 }
 
-Arbre::~Arbre() {
-    
-}
-
 void Arbre::croissance() {
-    setTaille(getTaille() + 1);
+    setTaille(getTaille() + 1.0f);
 }

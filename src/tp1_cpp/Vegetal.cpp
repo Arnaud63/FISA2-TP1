@@ -5,10 +5,6 @@ Vegetal::Vegetal() :
 
 }
 
-Vegetal::~Vegetal() {
-    
-}
-
 float Vegetal::getTaille() const {
     return mTaille;
 }

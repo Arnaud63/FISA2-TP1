@@ -6,7 +6,7 @@
 class Arbre : public Vegetal {
 public:
     Arbre();
-    ~Arbre();
+    virtual ~Arbre() = default;
 
     virtual void croissance() override;
 
