@@ -2,7 +2,9 @@
 #include <algorithm>
 
 Fleur::Fleur(float taille_max) :
-    mTailleMax(taille_max) {
+    mTailleMax(taille_max)
+{
+    
 }
 
 void Fleur::croissance() {

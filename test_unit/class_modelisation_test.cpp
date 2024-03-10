@@ -41,7 +41,7 @@ TEST(ClassModelisationTest, GetterTaille) {
 	monArbre.getTaille();
 	Vegetal* ptrVegetal = &monArbre;
 	ptrVegetal->getTaille();
-  SUCCEED();
+  	SUCCEED();
 }
 
 // Vegetal possede une methode virtuelle pure croissance que ses classes filles
@@ -62,7 +62,7 @@ TEST(ClassModelisationTest, Croissance) {
 	monArbre.croissance();
 	Vegetal* ptrVegetal = &monArbre;
 	ptrVegetal->croissance();
-  SUCCEED();
+  	SUCCEED();
 }
 
 // Les flotants ne permettent pas de décrire l'ensemble des nombres réels.
